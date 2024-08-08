@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/Styles/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="img"></div>
+        <div class="form_login">
+            <form class="form">
+                <div class="user-icon">
+                    <img src="/img/My first design 1.png" alt="">
+                </div>
+                <div class="input-box">
+                    <input type="email" placeholder="Email" name="email" id="input-email" required>
+                    <div class="errorP" id="error1">
+                        <p>Couldn't find your Account</p>
+                    </div>
+                    <i class='bx bxs-user'></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Password" name="password" id="input-password" minlength="8"
+                        required>
+                    <div class="errorP" id="error2">
+                        <p>Wrong password. Try again</p>
+                    </div>
+                    <i class='bx bxs-lock'></i>
+                </div>
+                <div class="forgot-password">
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <button type="submit" class="btn">LOGIN</button>
+                <div class="register-link">
+                    <p>Don't have account? <a href="/htmls/register.html">Register</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script defer type="text/javascript" src="/scrips/login.js"></script>
+</body>
+
+</html>

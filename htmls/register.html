@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Styles/style-register.css">
+    <title>Register</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="img"></div>
+        <div class="scroll">
+            <div class="form-register">
+                <form class="form">
+                    <h1>Sign up</h1>
+                    <div class="input-box">
+                        <label for="name">Names</label>
+                        <input type="text" placeholder="Someone" name="name" id="input-name" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="lastName">Last Names</label>
+                        <input type="text" placeholder="Junior" name="lastName" id="input-lsname" required>
+                    </div>
+                    <div class="input-box">
+                        <div class="labels">
+                            <label for="birthdate" id="labeldate">Birthdate</label>
+                            <label id="labelage">Age</label>
+                        </div>
+                        <div class="inputs">
+                            <input type="date" name="birthdate" id="input-date" required ">
+                            <input type=" number" id="age" disabled>
+                        </div>
+                    </div>
+                    <div class="check-box">
+                        <fieldset>
+                            <legend>Gender</legend>
+                            <div>
+                                <input type="radio" name="sex" id="male" value=false required />
+                                <label for="male">Male</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="sex" id="female" value=true />
+                                <label for="female">Female</label>
+                            </div>
+                        </fieldset>
+
+                    </div>
+                    <div class="input-box" id="input-box-cedula">
+                        <label for="cedula">Cédula</label>
+                        <input type="tel" placeholder=010-1234567-0 name="cedula" id="input-cedula"
+                            pattern="[0-9]{3}-[0-9]{7}-[0-9]{1}" required>
+                        <p id="errorc"></p>
+                    </div>
+                    <div class="input-box">
+                        <label for="email">Email address</label>
+                        <input type="email" placeholder="someone@email.com" name="email" id="input-email" required>
+                        <p id="errorm"></p>
+                    </div>
+                    <div class="input-box">
+                        <label for="phoneNumber">Phone Number</label>
+                        <input type="tel" placeholder="123-456-7890" id="input-phone" name="phoneNumber" min="10"
+                            max="12" required />
+                    </div>
+                    <div class="input-box">
+                        <label for="password">Password</label>
+                        <input type="password" placeholder="Password" name="password" id="input-password" minlength="8"
+                            required>
+                    </div>
+                    <button type="submit" class="btn">Sign up</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script defer type="text/javascript" src="/scrips/script.js"></script>
+</body>
+
+</html>

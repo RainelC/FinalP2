@@ -1,0 +1,366 @@
+body {
+    min-height: 97vh;
+    background: url(/img/background1.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: "Inter", sans-serif;
+}
+
+header {
+    background-color: #023059;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.option {
+    height: 37px;
+    border-radius: 10px;
+    margin: 0 0 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.option p{
+    color: #ffff;
+    font-size: 17px;
+    margin: 0 10px 0 10px;
+}
+
+.window {
+    background: #F2F2F2;
+    border-radius: 10px;
+    height: 87vh;
+    margin-top: 10px;
+    display: flex;
+}
+
+.window_dashboard{
+    font-family: "Inter", sans-serif;
+    background: #F2F2F2;
+    border-radius: 10px;
+    height: 87vh;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+
+.list-data{
+    /* background-color: rebeccapurple; */
+    height: 100%;
+    width: 40%;
+    margin-left: 13px;
+}
+
+.edit-data{
+     /* background-color: aqua; */
+     height: 100%;
+     width: 58%;
+}
+
+.list {
+    position: relative;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* height: 100%; */
+    /* width: 100%; */
+}
+
+.list .box {
+    width: 90%;
+    height: 40px;   
+    outline: none;
+    display: flex;
+    border-top: solid;
+    border-top-color: #0000002c;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+}
+.selected_box {   
+    width: 90%;
+    height: 40px;   
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #000000;
+    background-color: #658DA6;
+}
+
+/* .data {
+    position: relative;
+    top: 70px;
+} */
+
+.search {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 30px;
+}
+
+.search_bar {
+    /* position: relative; */
+    width: 90%;
+    background-color: #ffff;
+    border: 2px solid rgba(225, 225, 225, 0.8);
+    box-shadow: 0 0 10px rgba(255, 253, 253, 0.5);
+    border-radius: 10px;
+}
+.list-labels{
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 0px 20px 0;
+}
+
+ #search_input {
+    /* color: #fff; */
+    border: none;
+    /* width: %; */
+    padding: 10px;
+    position: relative;
+    left: 3%;
+    width: 100%;
+    background-color: transparent;
+    outline: none;
+   
+}
+
+#search_input:focus {
+    border: none;
+    box-shadow: none;
+}
+
+#btnSearch {
+    border: none;
+    position: relative;
+    left: 0;
+    width: 25%;
+    background-color: #023059;
+    color: #ffff;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.barbtn {
+    background-color: #023059;
+    color: #ffff;
+    border-radius: 10px;
+    position: relative;
+    /* width: 70%; */
+    left: -18em;
+    height: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.bar {
+    position: absolute;
+    top: 90px;
+    left: 63%;
+    height: 5%;
+}
+
+.bar #btn_plus{
+    position: relative;
+    left: 345px;
+    cursor: pointer;
+}
+
+.bar #delete {
+    position: relative;
+    left: 18em;
+    cursor: pointer;
+}
+
+.bar #save {
+    position: relative;
+    left: 0%;    
+    cursor: pointer;
+}
+
+
+#search-form {
+    display: flex;
+}
+
+#combobox {
+    position: relative;
+    left: 11px;
+    border: none; 
+}
+
+#combobox:focus {
+    border: none;
+    box-shadow: none;
+}
+
+
+.dataDoctor{
+    position: relative;
+    width: 50vw;
+    display: block;
+    top: 65px;
+    left: 100px;
+}
+
+#save{
+    position: absolute;
+    top: 2px;
+    left: 71%;
+}
+
+
+
+
+
+
+/* Especialidades */
+
+.window_especialidades{
+    font-family: "Inter", sans-serif;
+    background: #F2F2F2;
+    border-radius: 10px;
+    height: 80vh;
+    margin-top: 10px;
+    display: flex;
+    width: 33vw;
+    justify-content: center; 
+}
+
+.list-especialidades{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 56vh;
+
+}
+
+
+.list-border {
+    border: 2px solid rgba(130, 130, 130, 0.2);
+    border-radius: 10px;
+    position: relative;
+}
+
+#btn_plus_espe{
+    position: relative;
+    left: 33%;
+    top: 9px;
+}
+
+
+.box #name {
+    width: 60%;
+    height: 30px;
+    background-color: #ffff;
+    border: 2px solid rgba(225, 225, 225, 0.8);
+    box-shadow: 0 0 10px rgba(255, 253, 253, 0.5);
+    border-radius: 10px;
+}
+
+#errorP #errorE {
+    display: block;
+    color: #ff0000;
+    font-size: 13px;
+    margin-left: 20px;
+}
+
+.material-symbols-outlined{
+    position: absolute;
+    left: 85%;
+    margin-top: -21px;
+    font-size: 28px;
+}
+
+.list-especialidades .box {
+    width: 100%;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+}
+
+.selected_box_espe {  
+    width: 100%;
+    text-align: center; 
+    outline: none;
+    cursor: pointer;
+    color: #000000;
+    background-color: #658DA6;
+}
+
+.scroll{
+    overflow-x: hidden;
+    overflow-y: scroll;
+    position: relative;
+}
+
+
+#popup-window {
+    position: fixed;
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    font-size: 18px;
+    outline: none;
+    box-shadow: 0 0 10px rgb(101 141 166);
+    border: none;
+    padding: 10px;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    display: none;
+  }  
+
+#popup-window button {
+    font-size: 18px;
+    border: none;
+    background-color: transparent;
+
+}
+
+#popup-window p {
+    position: relative;
+    left: 9px;
+}
+
+#popup-window #delete-button {
+    position: relative;
+    right: 20px;
+}
+
+#popup-window #close-button {
+    position: relative;
+    left: 20px;
+}
+
+.list-citas {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 61vh;
+}
+
+
